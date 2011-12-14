@@ -1,0 +1,19 @@
+{
+  "name": "battle pupil",
+  "version": "1.1.9",
+  "description": "battle pupil - Chrome",
+  "content_scripts": [
+    {
+      "matches": ["http://www.erepublik.com/en", "http://www.erepublik.com/en/citizen/profile/*", "http://www.erepublik.com/en/citizen/change-residence", "http://www.erepublik.com/en/military/battlefield/*"],
+      "js" : ["jquery-1.7.1.min.js", "contentscript.js"]
+    }
+  ],
+  "permissions": [
+    "http://leileme.com/",
+    "http://api.erepublik.com/"
+  ],
+  "icons" : {
+    "48" : "icon-48.png",
+    "128" : "icon-128.png"
+  }
+}
