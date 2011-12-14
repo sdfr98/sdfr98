@@ -1,0 +1,113 @@
+<h3>Screenshot</h3>
+<table><tr><td><img src="http://i.imgur.com/j9UFf.png" /></td><td><img src="http://i.imgur.com/n4FH6.png" /></td></tr></table>
+<h3>Features</h3>
+<table>
+<tr><td><ul><b>请使用最新版本的Chrome/Firefox浏览器+Greasemonkey油猴插件</b></ul></td></tr>
+<tr><td><ul><b>1. 战场页面添加战场记录和提交报告功能（支持Chrome和Firefox）</b>
+<li>注意：<br>清除浏览器数据时，chrome若选中“删除Cookie以及其他网站数据和插件数据”，firefox若选中“清空最近历史记录--Cookie”会删除战场记录</li>
+<li>Chrome版兼容插件eRA 4.0.8，不兼容battle master</li>
+<li>Firefox版兼容插件eRA 4.0.8和bm 0.145 dev，不支持Firefox 3.6</li>
+</ul>
+<ul><b>2. 战场页面添加 战场ID_局数_Q5 fight次数（支持Chrome和Firefox）</b>
+<li>Q5 fight次数显示为“NaN”时，可以通过刷新(F5)页面恢复</li>
+<li>输出时升军衔，会按照新的军衔计算</li></ul>
+<ul><b>3. 首页添加报纸链接，最近EC报纸和国防部军令报纸（仅Chrome版）</b></ul>
+<ul><b>4. profile页面添加influence信息（仅Chrome版）</b></ul>
+<ul><b>5. 需要飞行时，添加飞行距离的信息（仅Chrome版，v1.1.4以上）</b></ul>
+</td></tr></table>
+<h3>Tutorial</h3>
+<table>
+<tr><td><ul><b>使用说明</b><li>http://battlepupil.diandian.com/</li></ul></td></tr></table>
+<h3>FAQ</h3>
+<table>
+<tr><td><ul><b>1.有没Chrome版本呢？</b>
+<li>有！可以在本页面找到安装链接。</li></ul>
+<ul><b>2.为什么提交后显示Submitted，在leileme.com/list.php却看不到提交记录？</b>
+<li>Submitted只是表示数据确实从你的电脑传到了leileme，但是leileme那一端还要处理这些数据。如果处理过程中出错，就不会有记录。</li>
+<li>leileme那一端需要无头鸡API验证一些信息，无头鸡API不可用时，无法成功提交。此时手动填写提交也是不行的。</li>
+<li>网络、插件本身或其他问题，传输数据失败。此时尝试手动填写提交可能成功。</li></ul>
+<ul><b>3.为什么点击Submit提交后显示错误？</b>
+<li>请更新使用最新版本的插件，v1.1.2之前的都失效了</li>
+<li>已经是最新版本的插件也不行：请使用最新版本的浏览器。<br/>
+根据大家的使用报告，目前插件Submit提交功能不支持Chrome版本12，不支持Firefox 3.6</li>
+<li>列表中没有数据时，点Submit不会提交</li>
+<li>网络问题，传输数据失败</li></ul>
+<ul><b>4.为什么点击Add无反应？</b>
+<li>请使用最新版本的浏览器。目前插件添加战场记录和提交报告功能不支持Firefox 3.6</li></ul>
+<ul><b>5.为什么战场记录（列表中的数据）消失了？</b>
+<li>使用浏览器本身的清除功能时<br/>chrome若选中“删除Cookie以及其他网站数据和插件数据”<br/>firefox若选中“清空最近历史记录--Cookie”<br/>会删除战场记录。使用其他清除软件可能也会影响。</li>
+<li>亲，被你删掉了。。你点到了X或者Clear-确定</li>
+<li>关闭浏览器或者重启电脑不会丢失数据</li></ul>
+<ul><b>6.为什么战场记录中枪数会叠加4次？</b>
+<li>因为同时安装了几个不同版本的插件。</li>
+<li>在安装新版本插件后，若没有删除旧的，会导致两个版本的插件同时起作用，重复取枪数，产生枪数叠加效果。例如你打了10枪，会显示成10101010这样。
+</li></ul>
+<ul><b>7.为什么fight按钮上面的Q5 fight枪数显示为“NaN”？</b>
+<li>请更新使用最新版本的插件，v1.0.6之前的版本会有这个问题。</li></ul>
+</td></tr></table>
+<h3>Chrome</h3>
+<table>
+<tr><td><ul><b>兼容eRA 4.0.8。Chrome 12无法使用submit提交功能</b></ul></td></tr>
+<tr><td><b>v1.1.9</b></td></tr>
+<tr><td><ul>
+<li>地址：<br/>https://chrome.google.com/webstore/detail/agomcdedciahocgedolbgelnefkkhbip</li>
+</ul></td></tr></table>
+<h3>Firefox with Greasemonkey</h3>
+<table>
+<tr><td><ul><b>兼容插件eRA 4.0.8和bm 0.145 dev。Firefox 3.6无法使用submit提交功能</b></ul></td></tr>
+<tr><td><b>v1.1.9</b></td></tr>
+<tr><td><ul><li>处理枪数显示不正确的问题：GX</li>
+</ul></td></tr>
+<tr><td><b>v1.1.8</b></td></tr>
+<tr><td><ul><li>显示列表边框</li>
+<li>提交时先检查无头鸡API，如果失败就不提交</li>
+</ul></td></tr>
+<tr><td><b>v1.1.6</b></td></tr>
+<tr><td><ul><li>简化：CMC和压秒模式合体</li>
+<li>谢谢VLKR、beijingit、RemiliaYuki、DoyDoy、XiaoQQC的帮助和反馈</li>
+</ul></td></tr>
+<tr><td><b>v1.1.5</b></td></tr>
+<tr><td><ul><li>CMC和压秒任务可以转换，同时提交</li></ul></td></tr>
+<tr><td><b>v1.1.4</b></td></tr>
+<tr><td><ul><li>修改军衔，Romper都可以用</li></ul></td></tr>
+<tr><td><b>v1.1.3</b></td></tr>
+<tr><td><ul><li>移除战场页面广告</li></ul></td></tr>
+<tr><td><b>v1.1.2</b></td></tr>
+<tr><td><ul><li>更新提交功能</li></ul></td></tr>
+<tr><td><b>v1.1.1</b></td></tr>
+<tr><td><ul><li>解决v1.1.0出现的问题</li>
+<li>谢谢Ginobili20的帮助和反馈</li></ul></td></tr>
+<tr><td><b>v1.1.0</b></td></tr>
+<tr><td><ul><li>添加战场记录</li>
+<li>添加提交报告功能</li>
+<li>处理刷新NE页面时枪数不准的问题</li>
+<li>多谢Classica、lifethinker不辞辛劳的帮助和反馈</li>
+<li>使用说明：<br/>
+1.左上角Stats：缩放列表。列表收缩时可以选择提交报告时对应的补助类别：CMC或Elite（压秒群）；列表放开时显示战场记录。默认选中CMC。<br/>
+2.右上角Add：根据CMC任务，点击Add添加当前战场到列表。只需添加一次，本局后续战斗记录会自动更新到列表。<br/>
+3.列表中会显示通过Add添加的 战场Id_局数_Q5枪数 和输出Influence。每行右边的X可以用于删除添加的记录。<br/>
+4.左下角Submit：当你需要提交报告时，点击该按钮<b>（！！！注意提交类别是否正确！！！）</b>。提交后，会显示提交是否成功，<b>！！！由于网络或其他问题，请务必查看leileme.com/list.php再次确认是否提交成功！！！</b>。<br/>
+5.右下角Report：预览提交的战场报告，并可以在报告下面的文本框中输入备注信息（对苦力的话等）。提交报告时会把备注信息一起提交。<br/>
+6.点击Submit提交后会在最下方出现Clear：用于删除所有列表记录。也可以用列表中的X逐条记录删除。<b>（！！！请在确认报告提交成功后使用Clear。因为删除后，无法恢复！！！）</b></li></ul></td></tr>
+<tr><td><b>v1.0.6</b></td></tr>
+<tr><td><ul><li>处理显示NaN的问题：jQuery-tipsy</li>
+<li>更新damage计算</li></ul></td></tr>
+<tr><td><b>v1.0.5</b></td></tr>
+<tr><td><ul>修正首次打开NE战场页面Q5 fight次数的计算
+<li>Classica好棒！</li></ul></td></tr>
+<tr><td><b>v1.0.4</b></td></tr>
+<tr><td><ul>尝试解决Q5 fight次数显示为“NaN”的问题
+<li>测试浏览器为Firefox 6，Greasemonkey版本0.9.10；安装其他插件eRA 4.0.8和bm 0.141 dev</li>
+<li>谢谢141、Classica、Varian Wrynn、VLKR的帮助和反馈</li></ul></td></tr>
+<tr><td><b>v1.0.3</b></td></tr>
+<tr><td><ul>Sの费纸 23:49:50<br/><blockquote> 老好人  23:47:46<br/>
+如果能添加场次和局数的显示报枪数就更方便了</blockquote></ul></td></tr>
+<tr><td><b>v1.0.2</b></td></tr>
+<tr><td><ul>添加战场Q5 fight次数
+<li>对于NE战场，刚刷新页面时显示的是没有NE加成计算的fight次数 ，击败一个敌人后恢复正常。</li>
+<li>输出时升军衔，会按照新的军衔计算</li>
+<li>貌似可以兼容eRepublik battle master</li></td></tr>
+<tr><td><b>v1.0.1</b></ul></td></tr>
+<tr><td><ul>添加首页报纸链接（最近EC报纸和国防部报纸） -- 该功能已被切除 = =</ul></td></tr>
+<tr><td><b>v1.0.0</b></ul></td></tr>
+<tr><td><ul>添加profile页面influence信息 -- 该功能已被切除</ul></td></tr></table>
