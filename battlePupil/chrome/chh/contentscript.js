@@ -1,5 +1,5 @@
 ﻿//---------------------------------------------------------------------------
-// v1.1.9
+// v1.2.0
 // 参考Bronie FPeD http://userscripts.org/scripts/review/70450
 //---------------------------------------------------------------------------
 var $j = jQuery.noConflict();
@@ -220,7 +220,7 @@ function showStats() {
 		tstats += '<tr><td>Elite Influence</td><td>' + eliteInf + '</td></tr><tr><td>Elite Q5fight</td><td>' + eliteFight + '</td></tr>';
 	}
 	if (cmcInf == 0 && eliteInf == 0) {
-		tstats = '<tr><td style="text-align:center;font-weight:bold;"><a href="https://chrome.google.com/webstore/detail/agomcdedciahocgedolbgelnefkkhbip" target="_blank">battle pupil v1.1.9</a></td></tr>';
+		tstats = '<tr><td style="text-align:center;font-weight:bold;"><a href="https://chrome.google.com/webstore/detail/agomcdedciahocgedolbgelnefkkhbip" target="_blank">battle pupil v1.2.0</a></td></tr>';
 	}
 	$j('#tstats_table').html(tstats);
 	stats_table.find('tr:gt(0)').click(function () {
@@ -292,9 +292,13 @@ function add_fight() {
 			if (response.message === 'ENEMY_KILLED') {
 				if (response.oldEnemy.isNatural === true) {
 					localStorage.setItem('ne', location.href.substr(49));
-					myInf += Math.floor(user.givenDamage * 0.1);
 				}
-				myInf += user.givenDamage;
+				if($j.cookie('popShower') == '0') {
+					if (response.oldEnemy.isNatural === true) {
+						myInf += Math.floor(user.givenDamage * 0.1);
+					}
+					myInf += user.givenDamage;
+				}
 				fight += user.earnedXp;
 				$j(this).find('strong').html(fight);
 				key = $j(this).find('small').text().trim().split('_', 2);
