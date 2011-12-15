@@ -1,0 +1,19 @@
+{
+  "name": "rosd",
+  "version": "1.0.3",
+  "description": "real-time order - Chrome",
+  "content_scripts": [
+    {
+      "matches": ["http://www.erepublik.com/en"],
+      "js" : ["jquery-1.7.1.min.js", "contentscript.js"]
+    }
+  ],
+  "permissions": [
+    "http://cosyhh.aliapp.com/"
+  ],
+  "update_url": "http://cosyhh.aliapp.com/rosd/updates.xml",
+  "icons" : {
+    "48" : "icon-48.png",
+    "128" : "icon-128.png"
+  }
+}
